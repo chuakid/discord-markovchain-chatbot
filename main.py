@@ -32,7 +32,7 @@ class MyClient(discord.Client):
                 print("incorrect format")
                 return
         if message.content.startswith("!train"):
-            await self.get_data(client.get_channel(CHANNEL).history(limit=10000))
+            await self.get_data(client.get_channel(int(CHANNEL)).history(limit=10000))
 
 
             
